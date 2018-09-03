@@ -1,0 +1,44 @@
+.t-site-header {
+    background: url('../images/hero.jpg') 0 0 no-repeat;   
+    background-size: cover;
+    height: 90vh;     
+    &__black {
+        background-color: $black;
+        @include large-up {
+            //position: fixed;
+        }  
+    }
+    &__top {        
+        padding-bottom: $grid-base * 3;
+        padding-top: $grid-base * 2;
+        @include large-up {
+            padding-bottom: $grid-base * 3;
+            padding-top: $grid-base * 2;
+        }
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__menu {
+        margin-top: $grid-base * 2;
+        @include medium-up {
+            margin-top: 0;
+            text-align: right;
+        }
+    }
+
+    &__hero {
+        margin-top: $grid-base * 10;
+        @include medium-up {
+            margin-top: $grid-base * 26;
+        }
+    }
+    &__intro-text {  
+        font-size: 18px; 
+        @include medium-up {
+            font-size: 28px;
+        }       
+    }
+}

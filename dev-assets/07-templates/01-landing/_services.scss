@@ -1,0 +1,11 @@
+.t-services {
+    margin-top: $grid-base * 8;
+    margin-bottom: $grid-base * 8;
+    padding-bottom: $grid-base * 7;
+    background-color: $black;
+
+    &__divider {
+        border-right: 1px solid $secondary-text-color;
+        border-left: 1px solid $secondary-text-color;
+    }
+}
