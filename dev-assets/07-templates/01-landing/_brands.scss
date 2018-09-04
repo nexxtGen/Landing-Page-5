@@ -1,0 +1,15 @@
+.t-brands{
+    margin-top: $grid-base * 4;
+    border-top: 1px solid $secondary-text-color;
+    border-bottom: 1px solid $secondary-text-color;   
+    
+    &__box {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        padding: $gutter * 2.5;
+    }
+   
+}

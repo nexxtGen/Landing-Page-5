@@ -4,6 +4,10 @@
 .u-bg-dark {
     background-color: $primary-site-dark-color;
 }
+
+.u-bg-primary {
+    background-color: $primary-site-color;
+}
 .u-secondary-color {
     color: $secondary-text-color;
 }
@@ -16,4 +20,9 @@
 
 .u-primary-site {
     color: $primary-site-color;
+}
+
+.u-box-shadow {
+    box-shadow: 4px 4px 8px rgb(85, 85, 85);
+
 }

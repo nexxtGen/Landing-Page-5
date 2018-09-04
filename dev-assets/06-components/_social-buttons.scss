@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     .fa {
+		color: white;
         font-size: 18px;
         text-align: center;        
     }
@@ -14,14 +15,15 @@
 .ic-btn:focus {
 	outline: 0;
 }
-.ic-btn {     
-    border: 2px solid black;    
+.ic-btn {  
+	border: none;   
+    //border: 2px solid $secondary-text-color;    
 	display: inline-block;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	cursor: pointer;
-	background-color: white;
+	background-color: $secondary-text-color;
 	//border: 0;
 	margin: 7px;
 	transition: transform 0.5s;
@@ -40,10 +42,10 @@
     color: $primary-site-dark-color;   
 }
 .fa-instagram {
-	color: #4d1a00;
+	color: $primary-site-dark-color;
 }
 .fa-github {
-	color: #1a66ff;
+	color: $primary-site-dark-color;
 }
 .ic-btn:hover, .ic-btn:hover .fa {
 	transform: scale(1.15);
@@ -51,17 +53,17 @@
 	transition: transform 0.7s;
 }
 .b-tw:hover {
-	background-color: #0084b4;
+	background-color: $primary-site-color;
 }
 .b-fb:hover {
-	background-color: #24478f;
+	background-color: $primary-site-color;
 }
 .b-gplus:hover {
-	background-color: #b30000;
+	background-color: $primary-site-color;
 }
 .b-inst:hover {
-	background-color: #4d1a00;
+	background-color: $primary-site-color;
 }
 .b-gh:hover {
-	background-color: #1a66ff;
+	background-color: $primary-site-color;
 }

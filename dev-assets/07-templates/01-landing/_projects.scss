@@ -1,11 +1,13 @@
-.t-projects{
+.t-projects{    
+
     &__m-row {
-        
+        margin-bottom: $grid-base * 3;
         display: flex;
         justify-content: center;
     }
 
-    &__menu-container {       
+    &__menu-container {  
+        margin-bottom: $grid-base * 2;     
 
         @include medium-up {
             display: flex;
@@ -18,5 +20,28 @@
             border-radius: 40px;
             border: 1px solid $secondary-text-color; 
         }        
+    }
+    &__img-container {
+        position: relative;  
+        margin-bottom: $gutter*2;        
+    }
+    &__img {        
+        width: 100%;
+        height: 190px;
+    }
+
+    &__layer {          
+        padding-top: 40px;   
+        color: $white;
+        position: absolute;	
+        width: calc(100% - 30px);        
+        height: 190px;
+        background-color: rgba(0, 0 ,0 , 0.5);
+        text-align: center;			
+        opacity: 0;
+        transition:opacity 0.3s linear;
+        &:hover {
+            opacity: 1;
+        }
     }
 }

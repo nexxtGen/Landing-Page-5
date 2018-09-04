@@ -1,0 +1,10 @@
+.t-facts {
+    margin-top: $grid-base * 8;
+    margin-bottom: $grid-base * 4;
+    padding-bottom: $grid-base * 7;
+    background-color: $black; 
+    &__number {
+        font-size: $font-size-1 *1.2;
+        color: $primary-site-color;
+    }   
+}

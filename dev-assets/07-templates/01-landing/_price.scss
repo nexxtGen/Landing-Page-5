@@ -1,0 +1,36 @@
+.t-price {
+    background-color: rgb(237, 237, 237);
+    
+    p {
+        margin: 0;
+    }
+    &__container {
+        text-align: center;
+        background-color: $white;
+        margin-top: $gutter;
+        margin-bottom: $grid-base * 6;
+    }
+    &__head {
+        padding-top: $grid-base * 3;
+        font-size: $font-size-2 *0.9;
+        font-weight: 500;
+    }
+    &__price {
+        font-size: $font-size-1 * 0.8;
+        line-height: $line-height-sm;
+        
+    }
+    &__month {
+        color: $secondary-text-color;
+        font-weight: 500;
+        font-size: $font-size-3;
+        padding-bottom: $grid-base *2;
+    }
+
+    &__btn {
+        margin-top: $grid-base *3;
+        background-color: $primary-site-dark-color;
+        width: 180px;
+        margin-bottom: $gutter * 3;
+    }
+}

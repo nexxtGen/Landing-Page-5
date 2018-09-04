@@ -1,0 +1,27 @@
+.t-premium {
+    padding-bottom: $gutter * 3;
+    &__icon-box {
+       text-align: right;
+    }
+
+    &__features {
+        padding-top: $gutter ;
+    }
+
+    &__item {
+        display: none;
+        @include medium-up {
+            display: block;
+        }
+    }   
+    &__footer {
+        text-align: center;
+        padding-top: $gutter *1.5 ;
+    }
+
+    &--divider {
+        border-bottom: 2px solid $secondary-text-color;
+        padding-bottom: $gutter *2;
+    }
+
+}

@@ -3,12 +3,23 @@
     justify-content: center;
 }
 
+.u-direction-row {
+    flex-direction: row;      
+}
 
 .object-fit_cover { 
     object-fit: cover; 
 }
+.u-fit-cover { 
+    object-fit: cover; 
+}
 
 .col-offset-4 {margin-left: 33.33%;}
+// Remove padding
+
+.u-no-padding {
+    padding: 0;
+}
 
 // Margin Bottom
 .u-mb-1 {
