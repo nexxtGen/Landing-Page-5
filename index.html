@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Awax Landing Page</title>
+    <link rel="stylesheet" href="prod-assets/style.css"> 
+    <link rel="stylesheet" href="prod-assets/form.css">   
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Awax Landing Page</title>
-    <link rel="stylesheet" href="prod-assets/style.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
 </head>
 <body> 
     <header class="t-site-header">
@@ -563,32 +566,65 @@
             </div>
         </div>
     </section>
-    <section class="t-tell">
+
+    <section class="t-contact">
         <div class="o-container">
             <div class="o-row">
-                <div class="o-col">
-                    <div class="social t-team__social">	
-                            <h1 class="c-header c-header--level3">Tell about US</h1>		
-                            <button class="ic-btn b-tw">
-                                <i class="fa fa-twitter"></i>
-                            </button>
-                            <button class="ic-btn b-fb">
-                                <i class="fa fa-facebook"></i>
-                            </button>
-                            <button class="ic-btn b-gplus">
-                                <i class="fa fa-google-plus"></i>
-                            </button>
-                            <button class="ic-btn b-inst">
-								<i class="fa fa-instagram"></i>
-							</button>
-							<button class="ic-btn b-gh">
-								<i class="fa fa-github"></i>
-							</button>
-                    </div>
+                <div class="o-col t-about__head u-mb-5">
+                    <h1 class="c-label c-label__primary">COntact Us</h1>
+                    <h2 class="c-label c-label__secondary">Our Agency located in Wroclove, Poland</h2>
+                </div>
+            </div>
+            <div class="o-row">
+                <div class="o-col t-contact__form-container">
+                    <form action="#" id="Form">  
+                        <div class="o-row">
+                             <div class="o-col o-col--md6">
+                                <div class="input-container">
+                                    <input id="Input-Name" name"Input-Name" type="text">
+                                    <label for="Input-Name">Name</label>
+                                </div>                                
+                            </div>
+                            <div class="o-col o-col--md6">                                
+                                <div class="input-container">
+                                    <input id="Input-Email" name"Input-Email" type="text">
+                                    <label for="Input-Email">E-Mail</label>
+                                </div>                                                            
+                            </div>
+                        </div>   
+                            <div class="input-container">
+                                <input id="Input-Subject" name"Input-Subject" type="text">
+                                <label for="Input-Subject">Subject</label>
+                            </div>
+                            <div class="input-container input-container__message">
+                                <input id="Input-message" name"Input-message" type="text">
+                                <label for="Input-message">Message</label>
+                            </div>
+                        
+                            <div class="input-container u-flex-c u-mt-3">
+                                <a href="#" class="c-btn c-btn--primary">Send Email</a>
+                            </div>
+                    </form>
+                        
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="t-map">
+        <div id="page-wrapper" class="t-map__container">                                     
+            <div id="map">
+            </div>
+        </div>     
+        <div class="o-container">
+            <div class="o-row">
+                <div class="o-col">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
 
@@ -598,13 +634,14 @@
         <div class="o-container">
             <div class="o-row">
                 <div class="o-col">
-                    
+                        
                 </div>
             </div>
         </div>
     </section>
 
     
-    
+    <script type="text/javascript" src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJUTPydGAimC-c88u_WQ1kCTegpHY52eM&callback=initMap"></script>   
 </body>
 </html>
