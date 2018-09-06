@@ -1,0 +1,50 @@
+.t-footer {
+    background-color: $black;
+    padding-top: $gutter;
+    
+    &__social {
+        padding-top: $gutter ;
+        @include large-up {
+            justify-content: left;
+        }
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: $grid-base * 4;
+    }
+
+    &__awax {    
+        display: flex;    
+        justify-content: center;
+        margin-top: 10px;
+        @include large-up {
+            margin-top: 95px;
+            justify-content: left;
+        }
+    }
+
+    &__text {
+        padding-top: $gutter ;
+        color: $secondary-text-color;
+    }
+
+    &__subscribe {
+        margin: 30px 5px;;
+        text-align: center;
+        height: 200px;
+        background-color: rgb(75, 75, 75);
+    }
+
+    &__divider {
+        margin: 10px auto 20px;
+        max-width: 200px;
+        border-bottom: 3px solid darkgray;
+    }
+
+    &__p {
+        text-transform: uppercase;
+        color: $secondary-text-color-darken;
+        padding-top: 40px;
+        font-weight: 500;
+    }
+}

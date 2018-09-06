@@ -1,4 +1,5 @@
 .social {
+
 	margin: 0 auto;	
 	padding: 0;
 	width: 500px;
@@ -10,11 +11,16 @@
 		color: white;
         font-size: 18px;
         text-align: center;        
-    }
+	}
+	
+	&--v2 {
+		justify-content: left;
+	}
 }
 .ic-btn:focus {
 	outline: 0;
 }
+
 .ic-btn {  
 	border: none;   
     //border: 2px solid $secondary-text-color;    
@@ -23,7 +29,7 @@
 	height: 40px;
 	border-radius: 50%;
 	cursor: pointer;
-	background-color: $secondary-text-color;
+	background-color: $secondary-text-color-darken;
 	//border: 0;
 	margin: 7px;
 	transition: transform 0.5s;
