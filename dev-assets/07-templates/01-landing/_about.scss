@@ -21,6 +21,10 @@
         }
     }
     &__vid {        
-        text-align: center;        
+        display: none;
+        @include medium-up {
+            display: block;
+            text-align: center;
+        }           
     }
 }
