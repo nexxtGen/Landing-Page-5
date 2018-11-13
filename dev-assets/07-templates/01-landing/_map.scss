@@ -1,22 +1,23 @@
 .t-map {
     margin-top: $gutter * 4;
-    &__container {
-        
+    &__container {        
         max-width: 100%;         
 	    margin: 0 auto;
     }
 
     &__cart {
-        width: 550px;
+        max-width: 550px;
+        padding-bottom: 15px;
         @include medium-up {
             width: 550px;
+            position: absolute;
+            margin-top: 70px;
+            padding-top: $gutter;
+            padding-bottom: $gutter * 2;
+            background-color: $white;  
+            z-index: 1;      
         }        
-        position: absolute;
-        margin-top: 70px;
-        padding-top: $gutter;
-        padding-bottom: $gutter * 2;
-        background-color: $white;  
-        z-index: 1;      
+        
     }
 
     &__text{
@@ -35,7 +36,7 @@
     }
 }
 
-#map {
+#map {    
 	height: 450px;
     width: 100%;
     -webkit-filter: grayscale(100%);
